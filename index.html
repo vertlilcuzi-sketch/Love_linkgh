@@ -5,69 +5,87 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LoveLink GH 💘</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #0f172a;
   color: white;
 }
 
-header {
-  background: linear-gradient(135deg, #ff4d6d, #ff758c);
-  padding: 40px 20px;
+/* HERO */
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+  url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
+.hero h1 {
+  font-size: 32px;
 }
 
-header p {
-  margin-top: 10px;
+.hero p {
+  opacity: 0.9;
 }
 
+/* CONTAINER */
 .container {
   padding: 20px;
 }
 
+/* CARDS */
 .card {
-  background: #1e293b;
-  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 .price {
   color: #ff4d6d;
   font-weight: bold;
-  margin: 10px 0;
 }
 
 button {
   background: #ff4d6d;
   border: none;
   padding: 12px 20px;
-  border-radius: 25px;
+  border-radius: 30px;
   color: white;
   font-size: 16px;
-  cursor: pointer;
+  margin-top: 10px;
 }
 
-button:hover {
-  opacity: 0.9;
-}
-
+/* BADGES */
 .badges {
   text-align: center;
   margin-top: 20px;
-  font-size: 14px;
   opacity: 0.8;
 }
 
+/* STICKY BUTTON */
 .sticky {
   position: fixed;
   bottom: 15px;
@@ -88,41 +106,47 @@ button:hover {
 
 <body>
 
-<header>
-  <h1>LoveLink GH 💘</h1>
-  <p>Turn your feelings into a link</p>
-</header>
+<div class="hero">
+  <div>
+    <h1>LoveLink GH 💘</h1>
+    <p>Turn your feelings into a beautiful link</p>
+  </div>
+</div>
 
 <div class="container">
 
   <h2>🔥 Our Services</h2>
 
   <div class="card">
+    <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2">
     <h3>💘 Crush Page</h3>
     <p>Ask your crush anonymously</p>
     <div class="price">GH₵20 - GH₵30</div>
-    <a href="https://wa.me/233206875120"><button>Order Now</button></a>
+    <a href="https://wa.me/233206875120?text=Hi%20I%20want%20a%20Crush%20Page"><button>Order Now</button></a>
   </div>
 
   <div class="card">
-    <h3>🎂 Birthday Surprise Page</h3>
-    <p>Create a special birthday link</p>
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+    <h3>🎂 Birthday Surprise</h3>
+    <p>Make their day unforgettable</p>
     <div class="price">GH₵30 - GH₵50</div>
-    <a href="https://wa.me/233206875120"><button>Order Now</button></a>
+    <a href="https://wa.me/233206875120?text=Hi%20I%20want%20a%20Birthday%20Page"><button>Order Now</button></a>
   </div>
 
   <div class="card">
-    <h3>💌 Love Confession Page</h3>
+    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7">
+    <h3>💌 Love Confession</h3>
     <p>Send a romantic message secretly</p>
     <div class="price">GH₵25</div>
-    <a href="https://wa.me/233206875120"><button>Order Now</button></a>
+    <a href="https://wa.me/233206875120?text=Hi%20I%20want%20a%20Love%20Confession%20Page"><button>Order Now</button></a>
   </div>
 
   <div class="card">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
     <h3>😈 Anonymous Message</h3>
     <p>Send mystery messages</p>
     <div class="price">GH₵15</div>
-    <a href="https://wa.me/233206875120"><button>Order Now</button></a>
+    <a href="https://wa.me/233206875120?text=Hi%20I%20want%20an%20Anonymous%20Message"><button>Order Now</button></a>
   </div>
 
   <div class="badges">
@@ -132,4 +156,8 @@ button:hover {
 </div>
 
 <div class="sticky">
-  <a href="
+  <a href="https://wa.me/233206875120?text=Hi%20I%20want%20to%20order%20a%20LoveLink%20page">💬 Order on WhatsApp</a>
+</div>
+
+</body>
+                                         </html>
